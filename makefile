@@ -1,4 +1,3 @@
-# Standard compiler variables
 CC = g++
 CCFLAGS = -Wall -g
 
