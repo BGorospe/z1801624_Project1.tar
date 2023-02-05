@@ -1,3 +1,5 @@
+#Blane Gorospe
+#CSCI 480
 CC = g++
 CCFLAGS = -Wall -g
 
