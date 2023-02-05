@@ -168,15 +168,15 @@ if (UptimeFile.is_open())
 
      	 	int uptimeDays = uptimeTime / (24 * 3600); 
       		uptimeTime = uptimeTime % (24 * 3600);
-     		int uptimeHours = uptimeTime / 3600;
+     		int uptimeHrs = uptimeTime / 3600;
       		uptimeTime %= 3600;
-      		int uptimeMinutes = uptimeTime / 60; 
+      		int uptimeMins = uptimeTime / 60; 
       		uptimeTime %= 60;
-      		int uptimeSeconds = uptimeTime; 
+      		int uptimeSec = uptimeTime; 
 
       		//Output in days, hours, minutes, and seconds how long turing has been up
-      		std::cout << "4. That time is equivalent to " << uptimeDays << " days, " << uptimeHours << " hours, " << 
-	      	uptimeMinutes << " minutes, " << uptimeSeconds << " seconds." << std::endl << std::endl;
+      		std::cout << "4. That time is equivalent to " << uptimeDays << " days, " << uptimeHrs << " hours, " << 
+	      	uptimeMins << " minutes, " << uptimeSec << " seconds." << std::endl << std::endl;
     	}
 }
 else
@@ -300,15 +300,15 @@ if (StatFile.is_open())
 
         	int idleDays = intIdle / (24 * 3600); 
         	intIdle = intIdle % (24 * 3600);
-        	int idleHours = intIdle / 3600; 
+        	int idleHrs = intIdle / 3600; 
         	intIdle %= 3600;
-        	int idleMinutes = intIdle / 60; 
+        	int idleMins = intIdle / 60; 
         	intIdle %= 60;
-        	int idleSeconds = intIdle; 
+        	int idleSec = intIdle; 
 
 		//Output idle time for processor 5 in days, hours, minutes, and seconds
-        	std::cout << "4. That time is equivalent to " << idleDays << " days, " << idleHours << " hours, " << 
-	      	idleMinutes << " minutes, " << idleSeconds << " seconds." << std::endl << std::endl;
+        	std::cout << "4. That time is equivalent to " << idleDays << " days, " << idleHrs << " hours, " << 
+	      	idleMins << " minutes, " << idleSec << " seconds." << std::endl << std::endl;
       		}
     	}
 }
