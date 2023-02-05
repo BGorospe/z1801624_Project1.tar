@@ -73,7 +73,7 @@ if (OSReleaseFile.is_open())
 else
 {
 	//unable to open error
-  	std::cerr << "ERROR: Could not open file /proc/sys/kernel/osrelease" << std::endl;
+  	std::cerr << "ERROR: unable to open file /proc/sys/kernel/osrelease" << std::endl;
 }
 
 OSReleaseFile.close();
@@ -315,7 +315,7 @@ if (StatFile.is_open())
 else
 {
 	//The unable to open error
-	std::cerr << "ERROR: Could not open file /proc/stat" << std::endl;
+	std::cerr << "ERROR: Unable to open file /proc/stat" << std::endl;
 }
   
 StatFile.close();
@@ -344,7 +344,7 @@ if (SwapsFile.is_open())
 else
 {
 	//The unable to open error
-    	std::cerr << "ERROR: Could not open file /proc/swaps" << std::endl;
+    	std::cerr << "ERROR: unable to open file /proc/swaps" << std::endl;
 }
 SwapsFile.close();
 return 0;
